@@ -1,0 +1,34 @@
+{
+  "name": "@1ib/probe",
+  "version": "1.0.0",
+  "description": "A utility to track property access and method call paths",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "test": "node --import tsx --test **/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "debug",
+    "trace",
+    "proxy",
+    "probe"
+  ],
+  "author": "kingcc",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
+    "vite": "^4.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}
