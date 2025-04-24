@@ -7,6 +7,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1ib/probe.git"
+  },
   "scripts": {
     "build": "vite build",
     "test": "node --import tsx --test **/*.test.ts",
